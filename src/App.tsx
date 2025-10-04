@@ -1,3 +1,5 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { Dashboard } from "./components/Dashboard";
 import { Alerts } from "./components/Alerts";
@@ -6,6 +8,7 @@ import { Scenarios } from "./components/Scenarios";
 import { Settings } from "./components/Settings";
 import { Sheet, SheetContent } from "./components/ui/sheet";
 import { Home, Bell, BarChart3, Zap } from "lucide-react";
+import Layout from "./components/Layout";
 
 type View = "dashboard" | "alerts" | "history" | "scenarios";
 
@@ -21,7 +24,7 @@ export default function App() {
   ];
 
   return (
-    <div className="flex flex-col h-screen bg-gray-50 max-w-md mx-auto relative">
+    <Layout>
       {/* Main content area */}
       <div className="flex-1 overflow-y-auto">
         {currentView === "dashboard" && <Dashboard onMenuClick={() => setShowSettings(true)} />}
@@ -64,6 +67,6 @@ export default function App() {
           <Settings onClose={() => setShowSettings(false)} />
         </SheetContent>
       </Sheet>
-    </div>
+    </Layout>
   );
 }
