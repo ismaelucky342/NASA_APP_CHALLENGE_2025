@@ -48,16 +48,19 @@ export function Settings({ onClose }: SettingsProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-green-50/30 to-gray-50 p-4 pb-28">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-green-50/30 to-gray-50 p-3 pb-28">
       {/* Header mejorado */}
       <div className="mb-6 p-6 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-2xl shadow-xl shadow-green-500/30 animate-fade-in">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-between gap-3">
+          <div>
+            <h1 className="text-2xl font-bold">
+              Ajustes
+              <br />
+              <span className="text-sm text-green-100 font-normal">Configuración de AgroIA</span>
+            </h1>
+          </div>
           <div className="p-3 bg-white/20 rounded-xl">
             <SettingsIcon className="w-6 h-6" />
-          </div>
-          <div>
-            <h1 className="text-2xl font-bold">Ajustes</h1>
-            <p className="text-sm text-green-100 mt-1">Configuración de AgroIA</p>
           </div>
         </div>
       </div>

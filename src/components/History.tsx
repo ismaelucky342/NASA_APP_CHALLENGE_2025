@@ -39,11 +39,16 @@ export function History() {
   ];
 
   return (
-    <div className="flex flex-col gap-4 pb-20">
+    <div className="flex flex-col gap-4 pb-20 p-3">
       {/* Header */}
-      <div className="p-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white">
-        <h1 className="text-white">Histórico y Rendimiento</h1>
-        <p className="text-sm text-purple-100 mt-1">Análisis de cosechas vs clima</p>
+      <div className="mb-6 p-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-2xl shadow-xl shadow-indigo-500/30 animate-fade-in">
+        <div className="flex items-center gap-3">
+          <h1 className="text-2xl font-bold">
+            Histórico y Rendimiento
+            <br />
+            <span className="text-sm text-purple-100 font-normal">Análisis de cosechas vs clima</span>
+          </h1>
+        </div>
       </div>
 
       {/* Resumen estadístico */}

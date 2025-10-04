@@ -82,11 +82,15 @@ export function Alerts() {
   };
 
   return (
-    <div className="flex flex-col gap-4 pb-20">
+    <div className="flex flex-col gap-4 pb-20 p-3">
       {/* Header */}
-      <div className="p-4 bg-gradient-to-r from-orange-500 to-red-600 text-white">
-        <h1 className="text-white">Alertas de Riesgo</h1>
-        <p className="text-sm text-orange-100 mt-1">Pronósticos y recomendaciones</p>
+      <div className="mb-6 p-6 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-2xl shadow-xl shadow-red-500/30 animate-fade-in">
+        <div className="flex items-center gap-3">
+          <h1 className="text-2xl font-bold">Alertas de Riesgo
+            <br />
+            <span className="text-sm text-orange-100 font-normal">Pronósticos y recomendaciones</span>
+          </h1>
+        </div>
       </div>
 
       {/* Filtro de parcelas */}

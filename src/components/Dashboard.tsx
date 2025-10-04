@@ -35,11 +35,14 @@ export function Dashboard({}: DashboardProps = {}) {
   ];
 
   return (
-    <div className="flex flex-col gap-4 p-4 pb-28">
+    <div className="flex flex-col gap-4 p-3 pb-28">
       {/* Header */}
       <div className="p-6 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-2xl shadow-xl shadow-green-500/30 animate-fade-in">
-        <h1 className="text-2xl font-bold text-white">AgroIA</h1>
-        <p className="text-sm text-green-100 mt-1">Protección Inteligente de Cultivos</p>
+        <h1 className="text-2xl font-bold text-white">
+          AgroIA
+          <br />
+          <span className="text-sm text-green-100 font-normal">Protección Inteligente de Cultivos</span>
+        </h1>
       </div>
 
       {/* Mapa de parcelas */}
