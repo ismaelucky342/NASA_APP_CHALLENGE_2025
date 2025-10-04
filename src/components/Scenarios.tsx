@@ -122,11 +122,16 @@ export function Scenarios() {
   };
 
   return (
-    <div className="flex flex-col gap-4 pb-20">
+    <div className="flex flex-col gap-4 pb-20 p-3">
       {/* Header */}
-      <div className="p-4 bg-gradient-to-r from-cyan-600 to-blue-600 text-white">
-        <h1 className="text-white">Simulación de Escenarios</h1>
-        <p className="text-sm text-cyan-100 mt-1">Predicción estacional con IA</p>
+      <div className="mb-6 p-6 bg-gradient-to-r from-cyan-600 to-blue-600 text-white rounded-2xl shadow-xl shadow-blue-500/30 animate-fade-in">
+        <div className="flex items-center gap-3">
+          <h1 className="text-2xl font-bold">
+            Simulación de Escenarios
+            <br />
+            <span className="text-sm text-cyan-100 font-normal">Predicción estacional con IA</span>
+          </h1>
+        </div>
       </div>
 
       {/* Predicciones estacionales */}
