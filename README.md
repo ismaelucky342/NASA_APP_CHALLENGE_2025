@@ -1,6 +1,7 @@
 # AgriWeather - Agricultural Weather Prediction App
+<img width="1000" height="998" alt="imagen" src="https://github.com/user-attachments/assets/bf61461a-7d4c-4bfe-9e2e-8426000dd220" />
 
-A comprehensive web application for farmers to predict rainfall and weather patterns, helping them protect crops and make informed decisions about planting, harvesting, and resource allocation.
+A comprehensive mobile application for farmers to predict rainfall and weather patterns, helping them protect crops and make informed decisions about planting, harvesting, and resource allocation.
 
 ## Features
 
